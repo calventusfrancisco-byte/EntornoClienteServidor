@@ -1,16 +1,7 @@
+{% extends "PaginaPrincipal.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
-{% load static %}
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="icon" href="{% static 'images/patatas.jpg' %}" type="image/jpg">
-    <script src="{% static 'js/script.js' %}"></script>
-    <title>Home</title>
-    <body>
-      <p>Hola1</p>
-    </body>
-</head>
-</html>
+{% block ContenidoPrincipal %}
+<button id="BotonPagPrincipal">Volver</button>
+<br><br>
+<p>Esta es la pagina web de acogida, no se q poner asi q imaginate q estoy diciendo cosas como una bienvenida y tal</p>
+{% endblock ContenidoPrincipal%}

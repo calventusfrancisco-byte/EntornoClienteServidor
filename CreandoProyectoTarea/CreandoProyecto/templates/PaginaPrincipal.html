@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/patatas.jpg' %}" type="image/x-icon">
+    <title>Mi pagina</title>
+
+</head>
+
+<body>
+    <div class="fondoTitulo">
+    <h1 id="title">Entorno Cliente Servidor</h1>
+    <a>El nombre de este html es: </a><b class="NombreHTML">{{html}}</b>
+    </div>
+    {% block ContenidoPrincipal %}
+    <button id="acogida">Acogida</button>
+    <button id="contacto">Contacto</button>
+    <p>Esta es mi pagina web q he hecho en Django q si q esta mu bien y tal yo q se</p>
+
+    
+    {% endblock ContenidoPrincipal %}
+</body>
+    <script src="{% static 'javascript/script.js' %}"></script>
+</html>

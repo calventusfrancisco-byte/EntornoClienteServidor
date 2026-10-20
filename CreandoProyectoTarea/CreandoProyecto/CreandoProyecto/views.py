@@ -1,3 +1,5 @@
 from django.shortcuts import render
 def homepage(request):
- return render(request, "home.html")
+ NombreHtml = "PaginaPrincipal.html"
+
+ return render(request, NombreHtml, {'html': NombreHtml})
