@@ -1,0 +1,11 @@
+{% extends "PaginaPrincipal.html" %}
+
+{% block ContenidoPrincipal %}
+<button id="BotonPagPrincipal">Volver</button>
+<br><br>
+<p>Hoy es {{hora}}</p>
+<p id="comprobacion"></p>
+ <script>   
+        const dia = {{dia}};
+    </script>
+{% endblock ContenidoPrincipal%}

@@ -18,10 +18,14 @@
     {% block ContenidoPrincipal %}
     <button id="acogida">Acogida</button>
     <button id="contacto">Contacto</button>
+    <button id="BotonCalendario">Calendario</button>
     <p>Esta es mi pagina web q he hecho en Django q si q esta mu bien y tal yo q se</p>
 
     
     {% endblock ContenidoPrincipal %}
 </body>
+    <script>
+        let nombreHTML = "{{html}}";
+    </script>
     <script src="{% static 'javascript/script.js' %}"></script>
 </html>
