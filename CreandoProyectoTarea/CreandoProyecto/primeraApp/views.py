@@ -86,21 +86,18 @@ def tresEnRaya(request):
             terminado = 2
             
         print("Terminado: " + str(terminado))
-        mensaje = "Turno de " + turno
 
     else:
         
         tablero = ['-','-','-','-','-','-','-','-','-']
         turno = 'X'
         ganador = 'Null'
-        mensaje = 'Turno de X'
         terminado = 0    
         print("El juego empieza, es el turno de: " + turno)
         
     contexto = {
         'tablero': tablero,
         'turno': turno,
-        'mensaje': mensaje,
         'terminado': terminado,
         'ganador': ganador
     }

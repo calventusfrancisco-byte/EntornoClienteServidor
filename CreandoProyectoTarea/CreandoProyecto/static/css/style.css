@@ -1,50 +1,96 @@
+body {
+    font-family: 'Fredoka', sans-serif, Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+.fondoTitulo {
+    background: linear-gradient(135deg, #00acc1, #00838f);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 #title {
-    color: rgb(147, 0, 246);
-    text-align: center;
-    
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
+    color: #ffffff;
 }
-.fondoTitulo{
 
-    background-color: aqua;
-    padding: 1%;
-    text-align: center;
+.NombreHTML {
+    color: #ffccbc;
+    font-weight: bold;
 }
-.NombreHTML{
 
-    color:crimson
+button, #acogida, #contacto, #BotonCalendario, #BotonJuego, #BotonPagPrincipal {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #ffffff;
+    border: 2px solid #00acc1;
+    color: #00acc1;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
-/* Convierte el formulario en una cuadrícula de 3x3 */
+
+button:hover, #acogida:hover, #contacto:hover, #BotonCalendario:hover, #BotonJuego:hover, #BotonPagPrincipal:hover {
+    background-color: #00acc1;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.botonesSuperiores {
+    text-align: center;
+    margin: 20px 0;
+}
+
 form {
     display: grid;
-    grid-template-columns: repeat(3, 80px); /* 3 columnas fijas de 80px cada una */
-    gap: 10px;                              /* Espacio de separación entre los botones */
-    justify-content: center;                /* Centra el tablero en la página */
-    margin-top: 20px;
+    grid-template-columns: repeat(3, 90px);
+    gap: 12px;
+    justify-content: center;
+    margin-top: 25px;
 }
 
-/* Estilo para los botones del tres en raya */
 .botones3enRaya {
     font-family: 'Fredoka', sans-serif;
-    font-size: 28px;                        /* Letra grande para la X o la O */
+    font-size: 32px;
     font-weight: bold;
-    color: brown;
+    color: #333333;
     background-color: #ffffff;
-    border: 3px solid cadetblue;
+    border: 3px solid #00acc1;
     border-radius: 12px;
-    height: 80px;                           /* Altura para que sean cuadrados */
+    height: 90px;
+    width: 90px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Efecto al pasar el ratón por encima de cada casilla */
 .botones3enRaya:hover {
-    background-color: #f7f7f7;
-    border-color: tomato;
-    transform: scale(1.05);                 /* Pequeño zoom al pasar el ratón */
+    background-color: #f0f4f8;
+    border-color: #ff5722;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .ganador {
-    font-size: 2.5rem;   /* Ajusta este valor si lo quieres más grande o pequeño */
-    text-align: center;  /* Centra el texto */
-    color: red;          /* Pone el texto en rojo */
+    font-size: 2.5rem;
+    text-align: center;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
 }
