@@ -2,6 +2,7 @@ const boton1 = document.getElementById("acogida");
 const boton2 = document.getElementById("contacto");
 const boton3 = document.getElementById("BotonPagPrincipal");
 const boton4 = document.getElementById("BotonCalendario");
+const boton5 = document.getElementById("BotonJuego");
 
 if(nombreHTML == 'calendario.html')
 {
@@ -26,5 +27,8 @@ boton3?.addEventListener("click", () => {
 
 boton4?.addEventListener("click", () => {
     window.location.href = "/primeraApp/calendario";
+});
+boton5?.addEventListener("click", () => {
+    window.location.href = "/primeraApp/tresEnRaya";
 });
 

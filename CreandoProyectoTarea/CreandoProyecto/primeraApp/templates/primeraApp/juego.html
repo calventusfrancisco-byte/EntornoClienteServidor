@@ -1,0 +1,31 @@
+{% extends "PaginaPrincipal.html" %}
+
+{% block ContenidoPrincipal %}
+<div class= "botonesSuperiores">
+<button id="BotonPagPrincipal">Volver</button>
+</div>
+<h1>Tres en raya</h1>
+<p>{{ mensaje }}</p>
+<div>
+    {% if terminado == 0 %}
+        <p>Turno de {{turno}}</p>
+        <form class="tresEnRaya" action="{% url '3EnRaya' %}" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="tablero" value="{{ tablero }}">
+            <input type="hidden" name="turno" value="{{ turno }}">
+            
+            {% for casilla in tablero %}                    
+                <button class="botones3enRaya" type="submit" name="posicion" value="{{ forloop.counter0 }}">
+                    {{ casilla }}
+                </button>
+            {% endfor %}
+
+            
+        </form>
+    {% elif terminado == 1 %}
+        <p class = "ganador">Ha ganado {{ ganador }}<p>
+    {% else %}
+        <p class = "ganador">Ha habido un empate<p>
+    {% endif %}
+</div>
+{% endblock ContenidoPrincipal%}

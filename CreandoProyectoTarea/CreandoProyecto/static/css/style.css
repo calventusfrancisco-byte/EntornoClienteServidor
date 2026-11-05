@@ -13,3 +13,38 @@
 
     color:crimson
 }
+/* Convierte el formulario en una cuadrícula de 3x3 */
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 80px); /* 3 columnas fijas de 80px cada una */
+    gap: 10px;                              /* Espacio de separación entre los botones */
+    justify-content: center;                /* Centra el tablero en la página */
+    margin-top: 20px;
+}
+
+/* Estilo para los botones del tres en raya */
+.botones3enRaya {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 28px;                        /* Letra grande para la X o la O */
+    font-weight: bold;
+    color: brown;
+    background-color: #ffffff;
+    border: 3px solid cadetblue;
+    border-radius: 12px;
+    height: 80px;                           /* Altura para que sean cuadrados */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por encima de cada casilla */
+.botones3enRaya:hover {
+    background-color: #f7f7f7;
+    border-color: tomato;
+    transform: scale(1.05);                 /* Pequeño zoom al pasar el ratón */
+}
+
+.ganador {
+    font-size: 2.5rem;   /* Ajusta este valor si lo quieres más grande o pequeño */
+    text-align: center;  /* Centra el texto */
+    color: red;          /* Pone el texto en rojo */
+}
